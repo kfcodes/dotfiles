@@ -5,6 +5,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'morhetz/gruvbox' 
 Plugin 'tpope/vim-surround' 
 Plugin 'tpope/vim-commentary' 
+Plugin 'tpope/vim-fugitive' 
 call vundle#end()            " required
 
 set encoding=utf-8
