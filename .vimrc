@@ -7,6 +7,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary' 
 Plugin 'tpope/vim-fugitive' 
 Plugin 'mattn/emmet-vim' 
+Plugin 'tmhedberg/SimpylFold' 
+Plugin 'vim-scripts/indentpython.vim' 
 call vundle#end()            " required
 
 set encoding=utf-8
@@ -16,7 +18,8 @@ syntax on
 colorscheme gruvbox
  set background=dark
 
-set relativenumber
+" set relativenumber
+set number
 augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
@@ -40,3 +43,5 @@ au BufNewFile,BufRead *.js, *.html, *.css
 set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
+
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
