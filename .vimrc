@@ -3,7 +3,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'morhetz/gruvbox' 
+Plugin 'tpope/vim-surround' 
+Plugin 'tpope/vim-commentary' 
 call vundle#end()            " required
+
 set encoding=utf-8
 set noerrorbells
 syntax on
