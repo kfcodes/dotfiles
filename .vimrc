@@ -36,3 +36,7 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2
+
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
