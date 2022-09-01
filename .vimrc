@@ -9,6 +9,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'mattn/emmet-vim' 
 Plugin 'tmhedberg/SimpylFold' 
 Plugin 'vim-scripts/indentpython.vim' 
+Plugin 'kien/ctrlp.vim'
 call vundle#end()            " required
 
 set encoding=utf-8
