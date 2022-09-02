@@ -11,6 +11,9 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim' 
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'Yggdroot/indentLine'
+Plugin 'pedrohdz/vim-yaml-folds'
+Plugin 'dense-analysis/ale'
 call vundle#end()            " required
 
 set encoding=utf-8
@@ -42,6 +45,12 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set softtabstop=2
     \ set shiftwidth=2
 
+au BufNewFile,BufRead *.yaml, *.yml
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
+    \ set expandtab
+
 set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
@@ -56,3 +65,9 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 set clipboard=unnamed
+
+let g:indentLine_char = '⦙'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+let g:ale_lint_on_text_changed = 'never'
