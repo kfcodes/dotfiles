@@ -14,6 +14,7 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'Yggdroot/indentLine'
 Plugin 'pedrohdz/vim-yaml-folds'
 Plugin 'dense-analysis/ale'
+Plugin 'jeetsukumaran/vim-pythonsense'
 call vundle#end()            " required
 
 set encoding=utf-8
@@ -23,7 +24,6 @@ syntax on
 colorscheme gruvbox
  set background=dark
 
-" set relativenumber
 set number
 augroup numbertoggle
   autocmd!
@@ -67,7 +67,18 @@ nnoremap <C-H> <C-W><C-H>
 set clipboard=unnamed
 
 let g:indentLine_char = '⦙'
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+"let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '⚠'
 let g:ale_lint_on_text_changed = 'never'
+
+" Ale Settings for Python
+let g:ale_linters = {'python': 'all'}
+let g:ale_fixers = {'python': ['isort', 'yapf', 'remove_trailing_lines', 'trim_whitespace']}let g:ale_lsp_suggestions = 1
+let g:ale_fix_on_save = 1
+let g:ale_go_gofmt_options = '-s'
+let g:ale_go_gometalinter_options = '— enable=gosimple — enable=staticcheck'
+let g:ale_completion_enabled = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] [%severity%] %code: %%s'
