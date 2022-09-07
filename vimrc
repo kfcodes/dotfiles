@@ -17,6 +17,7 @@ Plugin 'dense-analysis/ale'
 Plugin 'jeetsukumaran/vim-pythonsense'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'mechatroner/rainbow_csv'
 call vundle#end()            " required
 
 set encoding=utf-8
