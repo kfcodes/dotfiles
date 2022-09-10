@@ -18,6 +18,9 @@ Plugin 'jeetsukumaran/vim-pythonsense'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'mechatroner/rainbow_csv'
+Plugin 'othree/yajs.vim'
+Plugin 'othree/yajs.vim'
+Plugin 'vim-jsx-pretty'
 call vundle#end()            " required
 
 set encoding=utf-8
@@ -85,3 +88,9 @@ let g:ale_completion_enabled = 0
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] [%severity%] %code: %%s'
+
+au FileType javascript setlocal formatprg=prettier
+au FileType javascript.jsx setlocal formatprg=prettier
+au FileType typescript setlocal formatprg=prettier\ — parser\ typescript
+let g:ale_linters = { ‘javascript’: [‘eslint’] }
+let g:ale_fixers = { ‘javascript’: [‘eslint’], ‘typescript’: [‘prettier’, ‘tslint’], ‘scss’: [‘prettier’], ‘html’: [‘prettier’], ‘reason’: [‘refmt’] }
