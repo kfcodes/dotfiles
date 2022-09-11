@@ -19,7 +19,6 @@ Plugin 'ycm-core/YouCompleteMe'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'mechatroner/rainbow_csv'
 Plugin 'othree/yajs.vim'
-Plugin 'othree/yajs.vim'
 Plugin 'vim-jsx-pretty'
 call vundle#end()            " required
 
