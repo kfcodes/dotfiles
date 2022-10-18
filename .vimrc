@@ -107,6 +107,5 @@ au FileType javascript setlocal formatprg=prettier
 au FileType javascript.jsx setlocal formatprg=prettier
 " au FileType typescript setlocal formatprg=prettier\ — parser\ typescript
 "
-:autocmd BufNewFile,BufReadPost,BufWritePost *.csv setlocal nowrap
-:autocmd BufWritePre *.csv setlocal nowrap
-:
+autocmd BufNewFile,BufReadPost,BufWritePost *.csv RainbowAlign
+autocmd BufWritePre *.csv RainbowShrink
