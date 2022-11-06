@@ -1,25 +1,25 @@
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'morhetz/gruvbox' 
-Plugin 'tpope/vim-surround' 
-Plugin 'tpope/vim-commentary' 
-Plugin 'tpope/vim-fugitive' 
-Plugin 'mattn/emmet-vim' 
-Plugin 'tmhedberg/SimpylFold' 
-Plugin 'vim-scripts/indentpython.vim' 
-Plugin 'kien/ctrlp.vim'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plugin 'Yggdroot/indentLine'
-Plugin 'pedrohdz/vim-yaml-folds'
-Plugin 'dense-analysis/ale'
-Plugin 'jeetsukumaran/vim-pythonsense'
-Plugin 'ycm-core/YouCompleteMe'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'mechatroner/rainbow_csv'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'sbdchd/neoformat'
+    Plugin 'VundleVim/Vundle.vim'
+    Plugin 'morhetz/gruvbox' 
+    Plugin 'tpope/vim-surround' 
+    Plugin 'tpope/vim-commentary' 
+    Plugin 'tpope/vim-fugitive' 
+    Plugin 'mattn/emmet-vim' 
+    Plugin 'tmhedberg/SimpylFold' 
+    Plugin 'vim-scripts/indentpython.vim' 
+    Plugin 'kien/ctrlp.vim'
+    Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+    Plugin 'Yggdroot/indentLine'
+    Plugin 'pedrohdz/vim-yaml-folds'
+    Plugin 'dense-analysis/ale'
+    Plugin 'jeetsukumaran/vim-pythonsense'
+    Plugin 'ycm-core/YouCompleteMe'
+    Plugin 'davidhalter/jedi-vim'
+    Plugin 'mechatroner/rainbow_csv'
+    Plugin 'sheerun/vim-polyglot'
+    Plugin 'sbdchd/neoformat'
 call vundle#end()            " required
 
 set encoding=utf-8
@@ -31,6 +31,7 @@ colorscheme gruvbox
  set background=dark
 
 set number
+set rnu
 augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
@@ -46,12 +47,7 @@ au BufNewFile,BufRead *.py
     \ set autoindent
     \ set fileformat=unix
 
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
-
-au BufNewFile,BufRead *.yaml, *.yml
+au BufNewFile,BufRead *.js, *.html, *.css, *.yaml, *.yml
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2
