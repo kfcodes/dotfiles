@@ -22,6 +22,10 @@ call vundle#begin()
     Plugin 'sbdchd/neoformat'
 call vundle#end()            " required
 
+" Automatically Sources vim config file if it exists within the directory
+set exrc
+" Sets it to always be a block cursor
+set guicursor
 set encoding=utf-8
 set noerrorbells
 syntax on
