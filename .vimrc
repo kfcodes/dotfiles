@@ -26,13 +26,17 @@ call vundle#end()            " required
 set exrc
 " Sets it to always be a block cursor
 set guicursor
+" Removes the highlight word after search
+set nohlsearch
+" Can navigate away from files without saving them
+set hidden
 set encoding=utf-8
 set noerrorbells
 syntax on
 set clipboard=unnamed
 
 colorscheme gruvbox
- set background=dark
+set background=dark
 
 set number
 set rnu
