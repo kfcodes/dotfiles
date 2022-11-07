@@ -30,6 +30,10 @@ set guicursor
 set nohlsearch
 " Can navigate away from files without saving them
 set hidden
+set smartindent
+" Searching will not be case sensitive before you use a capital letter
+set ignorecase
+set smartcase
 set encoding=utf-8
 set noerrorbells
 syntax on
