@@ -36,6 +36,11 @@ set ignorecase
 set smartcase
 set encoding=utf-8
 set noerrorbells
+" A better way of keeping history in the application
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
 syntax on
 set clipboard=unnamed
 
