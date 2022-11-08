@@ -28,6 +28,8 @@ set exrc
 set guicursor
 " Removes the highlight word after search
 set nohlsearch
+" Better searching
+set incsearch
 " Can navigate away from files without saving them
 set hidden
 set smartindent
