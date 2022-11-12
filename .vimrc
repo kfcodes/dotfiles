@@ -43,8 +43,10 @@ set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
 set undofile
-The screen shows the file 4 rows from the end
+" The screen shows the file 4 rows from the end
 set scrolloff=4
+set colorcolumn=80
+set signcolumn=yes
 syntax on
 set clipboard=unnamed
 
