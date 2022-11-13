@@ -20,12 +20,13 @@ call vundle#begin()
     Plugin 'mechatroner/rainbow_csv'
     Plugin 'sheerun/vim-polyglot'
     Plugin 'sbdchd/neoformat'
+    Plugin 'nvim-telescope/telescope.nvim'
 call vundle#end()            " required
 
 " Automatically Sources vim config file if it exists within the directory
 set exrc
 " Sets it to always be a block cursor
-set guicursor
+" set guicursor
 " Removes the highlight word after search
 set nohlsearch
 " Better searching
@@ -45,7 +46,7 @@ set undodir=~/.vim/undodir
 set undofile
 " The screen shows the file 4 rows from the end
 set scrolloff=4
-set colorcolumn=80
+" set colorcolumn=80
 set signcolumn=yes
 syntax on
 set clipboard=unnamed
