@@ -2,6 +2,7 @@
 
 # Create Linux symlinks for config files
 ln -s .vimrc ~/.vimrc
+ln -s init.lua ~/.config/nvim/
 ln -s mpv.conf ~/.config/mpv/
 ln -s .inputrc ~/
 ln -s .dircolors ~/
